@@ -108,7 +108,7 @@ public class BlBlogControllerRoot {
      * @author chen
      */
     @GetMapping("delete/{id}")
-    public R delete(@PathVariable("id") Integer id) {
+    public R delete(@PathVariable("id") String id) {
         //先查询数据获取到该文章的文档数据
         SearchRequest searchRequest = new SearchRequest("blog");
         //构建搜索条件
