@@ -98,9 +98,9 @@ export default {
     return{
       //写成自己的服务器接口，后台是在 com.chen.common.upload.main.java 中实现，
       // http://服务器IP:端口号/main/... 这个路径的API只有root用户能够访问
-      uploadClassificationImgUrl: 'http://192.168.68.116:8001/main/uploadClassificationImg/',
-      uploadContentImgUrl: 'http://192.168.68.116:8001/main/uploadContentImg/',
-      uploadPageImgUrl: 'http://192.168.68.116:8001/main/uploadPageImg/'
+      uploadClassificationImgUrl: '/api/main/uploadClassificationImg/',
+      uploadContentImgUrl: '/api/main/uploadContentImg/',
+      uploadPageImgUrl: '/api/main/uploadPageImg/'
     }
   },
   methods: {
